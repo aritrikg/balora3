@@ -1,0 +1,130 @@
+{
+  "prompt_records": 7398,
+  "dice_pair_weighted": {
+    "balora": 0.7981970940632518,
+    "deterministic": 0.8048708566147759,
+    "frozen": 0.5123444878082426
+  },
+  "dice_prompt_weighted": {
+    "balora": 0.846759024335401,
+    "deterministic": 0.8465705315735598,
+    "frozen": 0.6237025858287786
+  },
+  "paired_dice": {
+    "mean_pp": 0.6673762551524133,
+    "t_interval_pp": [
+      -0.21423726623301564,
+      1.5489897765378422
+    ],
+    "percentile_interval_pp": [
+      0.07510606401931834,
+      1.3059275254188745
+    ],
+    "signflip_p": 0.09375,
+    "signflip_patterns": 64,
+    "leave_one_out_pp": [
+      0.3960849380859277,
+      0.9052728014936641,
+      0.6082396314922867,
+      0.7486554030473447,
+      0.6531585989979449,
+      0.6928461577973111
+    ]
+  },
+  "failure_counts": {
+    "balora": 200,
+    "deterministic": 189,
+    "frozen": 837
+  },
+  "within_volume_auroc_means": {
+    "frozen_entropy": 0.8515383675818579,
+    "deterministic_entropy": 0.6982643569299203,
+    "gaussian_entropy": 0.7463958720613998,
+    "gaussian_mi": 0.7973913170677974,
+    "paired_mi_minus_entropy": 0.05099544500639758,
+    "organ_area": 0.778287457460061,
+    "organ_area_mi": 0.8132648042265429,
+    "organ_area_entropy": 0.8258855977739085,
+    "organ_area_entropy_mi": 0.8257460497432568,
+    "organ_only": 0.780249345451914,
+    "det_organ_area": 0.7768672164057863,
+    "det_organ_area_entropy": 0.8221908753583294,
+    "paired_added_mi": 0.0349773467664819,
+    "paired_added_mi_given_entropy": -0.00013954803065158172
+  },
+  "within_volume_intervals": {
+    "mi_minus_entropy_t_interval": [
+      0.026058515849006366,
+      0.07593237416378879
+    ],
+    "added_mi_minmax": [
+      -0.02200592467202722,
+      0.07153595590077677
+    ],
+    "added_mi_t_interval": [
+      0.0024175515706819292,
+      0.06753714196228186
+    ],
+    "added_mi_given_entropy_t_interval": [
+      -0.005885896291979361,
+      0.005606800230676197
+    ],
+    "added_mi_given_entropy_minmax": [
+      -0.009310198899703859,
+      0.00552971576227379
+    ]
+  },
+  "timing": {
+    "balora": {
+      "mean_encoder_ms": 142.78306768479206,
+      "mean_decoder_ms_per_prompt": 203.5266396894058,
+      "mean_compute_s": 1.2338628361066937,
+      "median_compute_s": 1.1703690515041671,
+      "iqr_compute_s": [
+        0.7289817885020964,
+        1.7309894522504687
+      ]
+    },
+    "deterministic": {
+      "mean_encoder_ms": 156.22442198703578,
+      "mean_decoder_ms_per_prompt": 23.404019883239688,
+      "mean_compute_s": 0.28169031988283805,
+      "median_compute_s": 0.27699774800566923,
+      "iqr_compute_s": [
+        0.20370763699884248,
+        0.35618183774567985
+      ]
+    },
+    "frozen": {
+      "mean_encoder_ms": 115.88756972397947,
+      "mean_decoder_ms_per_prompt": 15.22669897199812,
+      "mean_compute_s": 0.19751591682169112,
+      "median_compute_s": 0.19763368999883796,
+      "iqr_compute_s": [
+        0.14020125549905038,
+        0.2500167015023176
+      ]
+    }
+  },
+  "decoder_ratio": 8.696225721255573,
+  "slice_compute_ratio": 4.380210284186861,
+  "rank_counts": {
+    "4": 39566,
+    "8": 36408,
+    "16": 2938
+  },
+  "rank16_per_prompt": 1.1914030819140309,
+  "prompts_without_rank16": 0,
+  "mean_active_rank": 6.292274939172749,
+  "empty_counts": {
+    "balora": 0,
+    "deterministic": 0,
+    "frozen": 0
+  },
+  "missing_surface_counts": {
+    "balora": 0,
+    "deterministic": 0,
+    "frozen": 0
+  },
+  "organ_area_vs_dice_change_spearman": 0.34065934065934067
+}
